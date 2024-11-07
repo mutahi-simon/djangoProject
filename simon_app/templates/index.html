@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+</head>
+<body>
+
+<a href="{%  url 'my_index' %}">home</a>
+<a href="{%  url 'my_about' %}">about us</a>
+<a href="{% url 'my_blog' %}">blogs</a>
+<a href="{% url  'my_services'%}">services</a>
+<a href="{%  url 'my_contact' %}">contact</a>
+<a href="{% url 'extra' %}">extra</a>
+<h2>welcome to django. this is the landing page</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, aspernatur at corporis ea ex exercitationem labore laborum magni quisquam, similique, sit vero vitae voluptate voluptatem. Aliquam fugit nulla quos?</p>
+
+<img src="{% static 'images/artist.webp' %}" alt="artistic">
+</body>
+</html>

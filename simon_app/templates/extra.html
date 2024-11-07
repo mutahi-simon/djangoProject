@@ -1,0 +1,28 @@
+{%  load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Extra_page</title>
+</head>
+<body>
+
+<a href="{%  url 'my_index' %}">home</a>
+<a href="{%  url 'my_about' %}">about us</a>
+<a href="{% url 'my_blog' %}">blogs</a>
+<a href="{% url  'my_services'%}">services</a>
+<a href="{%  url 'my_contact' %}">contact</a>
+<a href="{%  url 'extra' %}">extra</a>
+
+<h2>this is the extra page i created </h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias animi at, atque cum debitis dolorem eveniet explicabo laboriosam laborum minima neque nisi odio, quaerat quisquam, repellat reprehenderit sint voluptates.</p>
+
+<img src="{% static 'images/robots.webp' %}" alt="artistic">
+
+</body>
+</html>
